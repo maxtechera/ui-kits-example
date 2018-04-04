@@ -1,8 +1,8 @@
 import React from "react";
-import { Page, Card, List, Button } from "@shopify/polaris";
-
-const ShopifyPolaris = () => [
-  <Page>
+import { Card, List } from "@shopify/polaris";
+import Container from "../Container";
+const ShopifyPolaris = () => (
+  <Container>
     <Card
       title="Shipment 1234"
       secondaryFooterAction={{ content: "Cancel shipment" }}
@@ -15,7 +15,7 @@ const ShopifyPolaris = () => [
         </List>
       </Card.Section>
     </Card>
-  </Page>
-];
+  </Container>
+);
 
 export default ShopifyPolaris;
